@@ -3,10 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Web App</title>
+  <title>Basemap Toggle Example</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <script src="../src/index.js"></script>
+  <div id="container">
+    <div id="layerControl">
+      <h2>Choose Basemap</h2>
+      <div id="basemapOptions"></div>
+      <h2>Choose Area</h2>
+      <div id="areaOptions">
+        <div>
+          <input type="radio" id="us" name="area" value="us" checked>
+          <label for="us">US</label>
+        </div>
+        <div>
+          <input type="radio" id="world" name="area" value="world">
+          <label for="world">World</label>
+        </div>
+      </div>
+      <h2>Search</h2>
+      <div id="searchControl"></div>
+    </div>
+    <div id="map"></div>
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="src/index.js"></script>
 </body>
 </html>
