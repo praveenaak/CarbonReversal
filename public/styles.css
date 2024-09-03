@@ -99,6 +99,23 @@ label {
     background-color: #777;
 }
 
+/* Add button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #007aff;
+    color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     #layerControl {

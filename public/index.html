@@ -12,7 +12,6 @@
   <div id="container">
     <div id="layerControl">
       <h1>100 year risk of carbon reversal</h1> <!-- Added heading -->
-
       
       <h2>Basemap</h2>
       <div id="basemapOptions">
@@ -31,12 +30,15 @@
           <label for="world">World</label>
         </div>
       </div>
+
     </div>
     <div id="map"></div>
   </div>
   
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-  <script src="src/index.js"></script>
+  <script src="https://unpkg.com/leaflet-geotiff/dist/leaflet-geotiff.min.js"></script>
+  <script src="https://unpkg.com/leaflet-geotiff-plotty/dist/leaflet-geotiff-plotty.min.js"></script>
+  <script type="module" src="src/index.js"></script>
 </body>
 </html>
