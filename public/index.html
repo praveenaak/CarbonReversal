@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 years of Carbon Risk Reversal</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Year Risk of Carbon Reversal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
 </head>
 <body>
-  <div id="container">
-    <div id="layerControl">
-      <h1>100 year risk of carbon reversal</h1> <!-- Added heading -->
-      
-      <h2>Basemap</h2>
-      <div id="basemapOptions">
-        <!-- Basemap options will be dynamically generated here -->
-      </div>
-      
-
+    <div id="container">
+        <div id="layerControl">
+            <h1>100 year risk of carbon reversal</h1>
+            <div id="searchControl">
+                <input type="text" id="searchInput" placeholder="Search ...">
+                <button id="searchButton">Search</button>
+            </div>
+            <h2>Basemap</h2>
+            <div id="basemapOptions"></div>
+            <h2>Toggle Layers</h2>
+            <div id="layerToggle"></div>
+        </div>
+        <div id="map"></div>
     </div>
-    <div id="map"></div>
-  </div>
-  
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-  <script src="https://unpkg.com/leaflet-geotiff/dist/leaflet-geotiff.min.js"></script>
-  <script src="https://unpkg.com/leaflet-geotiff-plotty/dist/leaflet-geotiff-plotty.min.js"></script>
-  <script type="module" src="src/index.js"></script>
+    <script type="module" src="src/index.js"></script>
 </body>
 </html>
