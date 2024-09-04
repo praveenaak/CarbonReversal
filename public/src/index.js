@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Create a Web Worker
-  const worker = new Worker('/src/worker.js');
+  const worker = new Worker('./src/worker.js');
 
   // Function to interpolate between two colors
   function interpolateColor(color1, color2, factor) {
