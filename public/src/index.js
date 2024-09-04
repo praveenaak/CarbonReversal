@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Array of GeoJSON file paths
 
   const geojsonFiles = [
-    'https://praveenaak.github.io/CarbonReversal/public/data/combinedRisk_absReversal_8km_ssp245.geojson',
-    'https://praveenaak.github.io/CarbonReversal/public/data/combinedRisk_absReversal_8km_ssp585.geojson',
-    'https://praveenaak.github.io/CarbonReversal/public/data/drought_bufferPool_8km_ssp245.geojson',
-    'https://praveenaak.github.io/CarbonReversal/public/data/fire_bufferPool_8km_ssp245.geojson',
-    'https://praveenaak.github.io/CarbonReversal/public/data/insect_bufferPool_8km_ssp245.geojson'
+    './data/combinedRisk_absReversal_8km_ssp245.geojson',
+    './data/combinedRisk_absReversal_8km_ssp585.geojson',
+    './data/drought_bufferPool_8km_ssp245.geojson',
+    './data/fire_bufferPool_8km_ssp245.geojson',
+    './public/data/insect_bufferPool_8km_ssp245.geojson'
   ];
 
 
