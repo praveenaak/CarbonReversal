@@ -83,11 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Array of GeoJSON file paths
   const geojsonFiles = [
-    '../data/combinedRisk_absReversal_8km_ssp245.geojson',
-    '../data/combinedRisk_absReversal_8km_ssp585.geojson',
-    '../data/drought_bufferPool_8km_ssp245.geojson',
-    '../data/fire_bufferPool_8km_ssp245.geojson',
-    '../data/insect_bufferPool_8km_ssp245.geojson'
+    './public/data/combinedRisk_absReversal_8km_ssp245.geojson',
+    './public/data/combinedRisk_absReversal_8km_ssp585.geojson',
+    './public/data/drought_bufferPool_8km_ssp245.geojson',
+    './public/data/fire_bufferPool_8km_ssp245.geojson',
+    './public/data/insect_bufferPool_8km_ssp245.geojson'
   ];
 
   // Object to hold the layers and their metadata
