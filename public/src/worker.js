@@ -1,10 +1,10 @@
 self.addEventListener('message', function(e) {
     if (e.data.type === 'loadGeoJSON') {
-      loadGeoJSON(e.data.url);
+      loadGeoJSON(e.data.url, e.data.isHexagon);
     }
   });
   
-  function loadGeoJSON(url) {
+  function loadGeoJSON(url, isHexagon) {
     fetch(url)
       .then(response => response.json())
       .then(data => {
@@ -15,7 +15,7 @@ self.addEventListener('message', function(e) {
           minValue = Math.min(minValue, value);
           maxValue = Math.max(maxValue, value);
         });
-        self.postMessage({ type: 'geoJSONLoaded', data, minValue, maxValue });
+        self.postMessage({ type: 'geoJSONLoaded', data, minValue, maxValue, isHexagon });
       })
       .catch(error => console.error('Error loading GeoJSON:', error));
   }
