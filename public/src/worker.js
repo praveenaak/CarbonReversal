@@ -1,3 +1,5 @@
+// worker.js
+
 self.addEventListener('message', function(e) {
     if (e.data.type === 'loadGeoJSON') {
       loadGeoJSON(e.data.url);
