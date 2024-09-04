@@ -19,7 +19,7 @@ body {
 
 /* Sidebar (layerControl) styling */
 #layerControl {
-    width: 250px;
+    width: 290px;
     background: #2c2c2e;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
